@@ -1,6 +1,6 @@
 class Parent
 {
-int a=1;
+int a=31;
 Parent()
 {
   this.a=a;	
@@ -9,7 +9,7 @@ Parent()
 
 class Child extends Parent
 {
-	int b=1,c;
+	int b=4;
 	Child()
 	{
 		super();
@@ -17,8 +17,8 @@ class Child extends Parent
 	}
 void display()
 {
-	c=a+b;
-	System.out.println("The sum is" + c );
+	System.out.println("The Parent Age is:" + a );
+	System.out.println("The Child Age is:" + b );
 }
 
 
