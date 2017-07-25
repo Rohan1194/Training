@@ -1,0 +1,30 @@
+	SELECT ar.cost,ar.Airlinename,fs.distance, fl.flightcode,fs.Departure_time,fs.Arrival_time 
+	,fl.seats,fs.source_airport,fs.destination_airport  FROM airline.flight_schedule fs, 
+	airline.flight fl , airline.airlines ar Where fl.scheduleid = fs.Scheduleid 
+	AND fs.source_airport='Veer Savarkar International Airport' 
+	AND fs.destination_airport='Rajahmundry Airport' 
+	AND ar.Airlinecode=fl.airlinecode;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  int cost,price,distance;
+	cost=ar.cost;
+	distance=fs.distance;
+	public void calculate()
+	{
+	
+	price=cost*distance;
+	
+	
+	}
